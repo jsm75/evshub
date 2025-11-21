@@ -63,7 +63,7 @@ button {
   padding: 10px 20px;
   border-radius: 12px;
   font-size: 18px;
-  font-family: "Times New Roman", serif;  /* tipografía del sitio */
+  font-family: "Times New Roman", serif;  /* tipograf a del sitio */
   cursor: pointer;
   transition: 0.2s ease;
 }
@@ -102,8 +102,8 @@ button:hover {
 
 .video-item {
     width: 100%;
-    max-width: 350px;        /* ancho máximo de cada video */
-    margin: 0 auto;          /* centrado automático */
+    max-width: 350px;        /* ancho m ximo de cada video */
+    margin: 0 auto;          /* centrado autom tico */
     text-align: center;
 }
 
@@ -115,5 +115,29 @@ button:hover {
     border-radius: 12px;
     box-shadow: 0 0 10px rgba(180, 0, 255, 0.4); /* glow morado */
 }
+
+.videos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 5px;
+    border: 2px solid #b300ff;
+    border-radius: 12px;
+    background-color: black;
+}
+
+.video-box iframe {
+    width: 320px;
+    height: 180px;
+    border-radius: 10px;
+}
+
 
 
