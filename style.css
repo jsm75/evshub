@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  background-color: #000000;  /* negro */
+  color: #ffffff;             /* texto blanco por defecto */
+}
+
+header {
+  background-color: #000000;       /* negro */
+  padding: 16px 24px;
+  text-align: center;
+  border-bottom: 6px solid #b400ff;
+
+}
+
+.site-header {
+  background-color: #000000;
+  padding: 16px 24px;
+  text-align: center;
+  border-bottom: 6px solid #b400ff; /* tu morado brillante */
+}
+
+
+header h1 {
+  margin: 0;
+  letter-spacing: 0.15em;
+  font-size: 40px;
+}
+
+.section {
+  background-color: transparent;
+  padding: 24px;
+  width: 90%;
+  max-width: 900px;
+  margin: 24px auto;
+  text-align: center; 
+  border: none;
+  box-shadow: none;
+}
+
+
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #1e90ff;   /* azul como color terciario */
+  font-size: 20px;
+}
+
+.menu-inicio {
+  display: flex;
+  flex-direction: column;   /* uno debajo del otro */
+  align-items: center;      /* centrados */
+  gap: 20px;                /* espacio vertical entre botones */
+  padding: 40px 0;
+}
+
+button {
+  background: transparent;            /* sin fondo */
+  color: #b400ff;                     /* morado brillante */
+  border: 2px solid #b400ff;          /* outline morado */
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-family: "Times New Roman", serif;  /* tipografía del sitio */
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+
+button:hover {
+  background: #b400ff;   /* morado brillante */
+  color: #000000;        /* negro para contraste */
+  transform: scale(1.05);
+}
+
+.section button {
+  display: block;
+  margin: 20px auto;   /* centrado horizontal */
+}
+
+.botones-momento {
+  display: flex;           /* <-- horizontal */
+  justify-content: center; /* centrados */
+  gap: 20px;               /* espacio entre ellos */
+  margin-top: 20px;
+}
+
+.section button {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.videos {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 columnas */
+    gap: 40px;                               /* espacio entre videos */
+    justify-items: center;                   /* centra los elementos */
+}
+
+.video-item {
+    width: 100%;
+    max-width: 350px;        /* ancho máximo de cada video */
+    margin: 0 auto;          /* centrado automático */
+    text-align: center;
+}
+
+.video-item video {
+    width: 100%;
+    height: 220px;           /* altura fija para que todos sean iguales */
+    object-fit: cover;       /* recorta suavemente para que no se distorsione */
+    border: 3px solid #b400ff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(180, 0, 255, 0.4); /* glow morado */
+}
+
+
