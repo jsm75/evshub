@@ -116,32 +116,30 @@ button:hover {
     box-shadow: 0 0 10px rgba(180, 0, 255, 0.4); /* glow morado */
 }
 
-/* CONTENEDOR: 3 videos por fila */
-.video-grid {
+/* 3 columnas de verdad */
+.videos-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  gap: 24px;                             /* espacio entre videos */
-  justify-items: center;                 /* centra cada video dentro de su celda */
-  align-items: start;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  justify-items: center;
   margin-top: 20px;
 }
 
-/* CAJA: sin marco morado */
+/* que cada caja ocupe toda su celda */
 .video-box {
-  border: none;          /* quita el cuadro morado */
-  background: transparent;
-  padding: 0;
-  margin: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
-/* TAMAÑO DEL IFRAME */
+/* iframe responsivo: se ajusta al tamaño de la columna */
 .video-box iframe {
-  width: 320px;          /* ajusta a tu gusto */
-  height: 180px;
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;   /* mantiene proporción bonita */
+  height: auto;
   border: none;
-  border-radius: 10px;   /* si quieres esquinas suaves */
+  border-radius: 10px;
 }
 
 
