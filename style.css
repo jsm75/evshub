@@ -142,5 +142,12 @@ button:hover {
   border-radius: 10px;
 }
 
+.video-box video {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  border: none;
+}
 
 
