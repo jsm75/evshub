@@ -116,27 +116,32 @@ button:hover {
     box-shadow: 0 0 10px rgba(180, 0, 255, 0.4); /* glow morado */
 }
 
+/* CONTENEDOR: 3 videos por fila */
 .videos-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 24px;                             /* espacio entre videos */
+  justify-items: center;                 /* centra cada video dentro de su celda */
+  align-items: start;
+  margin-top: 20px;
 }
 
+/* CAJA: sin marco morado */
 .video-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
-    padding: 5px;
-    border: 2px solid #b300ff;
-    border-radius: 12px;
-    background-color: black;
+  border: none;          /* quita el cuadro morado */
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
+/* TAMAÑO DEL IFRAME */
 .video-box iframe {
-    width: 320px;
-    height: 180px;
-    border-radius: 10px;
+  width: 320px;          /* ajusta a tu gusto */
+  height: 180px;
+  border: none;
+  border-radius: 10px;   /* si quieres esquinas suaves */
 }
 
 
